@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Petshop PatinhaShop</title>
 
+    <!--Icones-->
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+
+    <!--Estilo-->
     <link rel="stylesheet" href="style.css" />
 
+    <!--Fontes-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,7 +24,18 @@
     <header id="header">
       <nav class="container">
         <a class="logo" href="#"><span>patinha</span>shop</a>
-        <div class="menu">div para o menu</div>
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#scheduletime">Agendar horário</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+        <div class="toggle icon-menu"></div>
+        <div class="toggle icon-close"></div>
       </nav>
     </header>
     <main>
@@ -27,12 +43,12 @@
         <div class="container grid">
           <div class="image">
             <img
-              src="./assets/imagem-principal.jpg"
+              src="./assets/images/imagem-principal.jpg"
               alt="Imagem de um cachorrinho filhote dormindo no colo de uma pessoa."
             />
           </div>
           <div class="text">
-            <h1>Seus amigos de quatro patinhas felizes e cheirosos</h1>
+            <h2 class="title">Seu amigo de quatro patinhas feliz e cheiroso</h2>
             <p>
               O PatinhaShop tem diversos serviços e produtos para você mimar o
               seu bichinho.
@@ -43,6 +59,85 @@
       </section>
 
       <div class="divider-1"></div>
+
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img
+              src="./assets/images/imagem-sobre.jpg"
+              alt="Imagem de um cachorro branco e preto mostrando a língua."
+            />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre o <span>patinha</span>shop</h2>
+            <p>
+              O petshop patinhashop foi fundado em 2010 com a ideia de reunir em
+              um só lugar os principais itens e serviços para os nossos amados
+              pets.
+            </p>
+            <br />
+            <p>
+              Aqui no patinhashop temos veterinários disponíveis para consultas
+              de rotina, afinal é sempre bom ficar de olho na saúde do seu
+              companheiro pois como diziam nossos avós é melhor prevenir do que
+              remediar, pronto atendimento, serviços de higiene, beleza e os
+              mais diversos itens para o dia a dia e conforto do seu animal.
+            </p>
+            <br />
+            <p>
+              Estamos há mais de 10 anos no mercado prezando pelo bom
+              atendimento, cuidado e carinho com os nossos clientes de quatro
+              patas (os de duas também) trazendo os melhores serviços para o seu
+              pet viver saúdavel e feliz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>patinhashop</strong>, já
+              conquistou inúmeros animaizinhos com serviços de primeira
+              qualidade e carinho no atendimento.
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <!--a tag i é bastante usada para colocar ícones, fica mais semântico do que usar uma div-->
+              <i class="icon-aid-kit"></i>
+              <h3 class="title">Consultas</h3>
+              <p>
+                Consultas de rotina e pronto atendimento com nossos
+                veterinários.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-bath"></i>
+              <h3 class="title">Higiene e beleza</h3>
+              <p>
+                Temos diversos serviços como banho, tosa, hidratação de pelo,
+                entre outros para o seu pet ter um verdadeiro dia de spa.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-paw"></i>
+              <h3 class="title">Lojinha</h3>
+              <p>
+                O patinhashop tem uma loja com os mais diversos itens para o seu
+                pet como ração, acessórios, brinquedos, medicamentos e vários
+                outros mimos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="main.js"></script>
   </body>
 </html>
