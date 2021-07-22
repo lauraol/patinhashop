@@ -9,6 +9,12 @@
     <!--Icones-->
     <link rel="stylesheet" href="./assets/fonts/style.css" />
 
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
     <!--Estilo-->
     <link rel="stylesheet" href="style.css" />
 
@@ -38,6 +44,7 @@
         <div class="toggle icon-close"></div>
       </nav>
     </header>
+
     <main>
       <section class="section" id="home">
         <div class="container grid">
@@ -136,8 +143,123 @@
           </div>
         </div>
       </section>
+
+      <div class="divider-1"></div>
+      <p>Fazer section de agendar horário</p>
+
+      <div class="divider-2"></div>
+
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos dos tutores</h2>
+          </header>
+
+          <div class="testimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Sou cliente do PatinhaShop e não troco por nada, o Billy ama
+                    o espaço e toda vez que vai tomar banho volta todo feliz,
+                    cheiroso, arrumado e ainda ganha um pestisco por ter sido
+                    bonzinho.
+                  </p>
+
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/30.jpg"
+                      alt="Foto da Ana Clara"
+                    />
+                    Ana Clara
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Sempre levo o Billy para tomar as vacinas no PatinhaShop e
+                    os vets são sempre muito atenciosos, eles aplicam a vacina
+                    rapidinho e o Billy ainda ganha um pestisco por ser tão
+                    corajoso.
+                  </p>
+
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/men/59.jpg"
+                      alt="Foto do Luan Oliveira"
+                    />
+                    Luan Oliveira
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Sempre levo a minha doguinha para escolher os brinquedos
+                    dela no PatinhaShop e ela ama, os atendentes são sempre
+                    atensiosos, os produtos possuem qualidade e os preços são
+                    ótimos.
+                  </p>
+
+                  <cite>
+                    <img
+                      src="https://randomuser.me/api/portraits/women/27.jpg"
+                      alt="Foto da Bruna Silva"
+                    />
+                    Bruna Silva
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-1"></div>
+
+      <section class="section" id="contact">
+        <div class="container grid">
+          <div class="text">
+            <h2 class="title">Entre em contato com a gente!</h2>
+            <p>
+              Entre em contato com a nossa equipe do <span>patinha</span>shop,
+              queremos tirar suas dúvidas, conhecer seu pet, ouvir críticas e
+              sugestões.
+            </p>
+            <a
+              href="https://api.whatsapp.com/send?phone=+5511000000000&text=Olá! Gostaria de saber quais os horários vagos para banho e tosa hoje."
+              class="button"
+              target="_blank"
+              ><i class="icon-whatsapp"></i> Entrar em contato</a
+            >
+          </div>
+
+          <div class="links">
+            <ul class="grid">
+              <li><i class="icon-phone"></i>11 92284-3698</li>
+              <li><i class="icon-location"></i>R. Salome Queiroga 100</li>
+              <li><i class="icon-envelope"></i>contato@patinhashop.com</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <!--swipper-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--scrollreveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--main.js-->
     <script src="main.js"></script>
   </body>
 </html>
