@@ -377,6 +377,70 @@ nav.show div.icon-close {
   margin-bottom: 0.75rem;
 }
 
+/*clube patinhashop*/
+form.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.form input {
+  padding: 0.8rem;
+  border: none;
+  border-bottom: 3px solid var(--base-color);
+  background-color: var(--body-color);
+
+  margin-bottom: 1.25rem;
+}
+
+#club .image {
+  position: relative;
+}
+
+#club .image::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -16.8%;
+  left: 5%;
+  z-index: 0; /*eixo de profundidade*/
+}
+/*Criação de um elemento fantasma*/
+
+#club .image img {
+  position: relative;
+  right: 2.93rem;
+}
+
+#club .image img,
+#club .image::before {
+  border-radius: 0.25rem;
+}
+
+.submit {
+  background-color: var(--base-color);
+  color: var(--text-color-light);
+  height: 3.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3; /*deixando a transição do hover mais suave*/
+}
+
+.submit:hover {
+  background: var(--base-color-alt);
+}
+
 /*Depoimentos*/
 #testimonials {
   background: #ffffff;
@@ -534,6 +598,162 @@ footer .social a:hover {
 }
 
 /*Responsivo*/
+/* medium devices - tablets: 767 > */
+@media (min-width: 767px) and (max-width: 991px) {
+  /*contato*/
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /*footer*/
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+}
+
+/* large devices: 1023 > */
+@media (min-width: 1023px) and (max-width: 1998px) {
+  /*classes reutilizáveis*/
+  .container {
+    max-width: 943px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+
+  .section header,
+  #testimonials header {
+    max-width: 40rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .button {
+    height: 3.125rem;
+  }
+
+  /*navegação vulgo menu*/
+  nav .menu {
+    opacity: 1;
+    visibility: visible;
+    top: 0;
+  }
+
+  nav .menu ul {
+    display: flex;
+    gap: 2rem;
+  }
+
+  nav .menu ul li a.title {
+    font: 400 1rem var(--body-font);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  nav .menu ul li a.title.active {
+    font-weight: bold;
+    -webkit-font-smoothing: auto;
+  }
+
+  nav .icon-menu {
+    display: none;
+  }
+
+  /*layout*/
+  main {
+    margin-top: var(--header-height);
+  }
+
+  /*home*/
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image img {
+    width: 28rem;
+  }
+
+  /*
+      mudando a ordem dos elementos apenas com o CSS com a propriedade order
+      OBS: a propriedade ordem só funciona porque temos um grid no elemento
+    */
+  #home .image {
+    order: 1;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 24rem;
+    text-align: left;
+  }
+
+  /*serviços*/
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  /*clube*/
+  #club .image {
+    display: none;
+  }
+
+  /*depoimentos*/
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /*contato*/
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /*footer*/
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+}
+
 /* extra large devices: 1200 > */
 @media (min-width: 1200px) {
   /*classes reutilizáveis*/
@@ -597,6 +817,10 @@ footer .social a:hover {
     margin: 0 auto;
   }
 
+  #home .image img {
+    width: 33rem;
+  }
+
   /*
     mudando a ordem dos elementos apenas com o CSS com a propriedade order
     OBS: a propriedade ordem só funciona porque temos um grid no elemento
@@ -615,6 +839,27 @@ footer .social a:hover {
   #about .container {
     margin: 0 auto;
     grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #about .image {
+    position: relative;
+  }
+
+  #about .image img {
+    width: 20rem;
+  }
+
+  /*Criação de um elemento fantasma*/
+  #about .image::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: var(--base-color-second);
+    position: absolute;
+    top: -8.3%;
+    left: -10%;
+    z-index: 0; /*eixo de profundidade*/
   }
 
   /*serviços*/
@@ -625,6 +870,11 @@ footer .social a:hover {
   .card {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  /*clube*/
+  #club .image {
+    display: none;
   }
 
   /*depoimentos*/
@@ -658,13 +908,3 @@ footer .social a:hover {
     font-size: 2.25rem;
   }
 }
-
-/* large devices: 1023 > */
-/* large devices: 992 > */
-@media (min-width: 992px) {
-  :root {
-    --title-font-size: 2.25rem;
-    --subtitle-font-size: 1.125rem;
-  }
-}
-/* medium devices - tablets: 767 > */

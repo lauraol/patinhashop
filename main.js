@@ -60,6 +60,7 @@ scrollReveal.reveal(
 #home .text, #home .image,
 #about .image, #about .text,
 #services header, #services .card,
+#club header, #club .text, #club form.form
 #testimonials header, #testimonials .testimonials,
 #contact .text, #contact .liks,
 footer .brand, footer .social
