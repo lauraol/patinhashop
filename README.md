@@ -6,7 +6,7 @@
 
 ## 💻 Projeto
 
-O PatinhaShop é uma página institucional com o formato One Page, responsiva, portanto, é possível utilizá-la em diversos dispositivos.
+O PatinhaShop é uma página institucional de um petshop fictício. O projeto possui o formato de uma One Page responsiva, portanto é possível acessá-lo de diversos dispositivos e foi desenvolvido durante a NLW 06 na Mission Origin oferecida pela Rocketseat 🚀💜.
 
 ## 🚀 Tecnologias
 
@@ -32,5 +32,3 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](.github/LICENSE.md) para mais detalhes.
 
 ---
-
-Projeto realizado na NLW da Rockeseat 🚀💜
